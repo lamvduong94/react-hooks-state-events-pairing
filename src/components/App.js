@@ -1,4 +1,6 @@
+import React, { useState } from 'react';
 import video from "../data/video.js";
+import DisplayDetails from './DisplayDetails';
 
 function App() {
   console.log("Here's your data:", video);
@@ -13,6 +15,7 @@ function App() {
         allowFullScreen
         title="Thinking in React"
       />
+      <DisplayDetails video={video} />
     </div>
   );
 }
